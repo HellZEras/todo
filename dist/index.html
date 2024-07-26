@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tauri + Yew App</title>
+    
+  
+<link rel="modulepreload" href="/todo-ui-a600ffddc1847dbc.js" crossorigin=anonymous integrity="sha384-G+BESWk3pfQGRhYEuQo9IS90/S1NRnaiU0ISzsEh1Zh62qY/IRDyM776pu6d7axS">
+<link rel="preload" href="/todo-ui-a600ffddc1847dbc_bg.wasm" crossorigin=anonymous integrity="sha384-HB/iA9cD0UQ6PeffzoDbp4pgtECMIKSbvlf0Y9tFOUcBqq4u8IpnnBDRITE646UU" as="fetch" type="application/wasm"></head>
+  <body>
+<script type="module" nonce="bDdNNO2r6eT6dWO0NwZPcQ==">
+import init, * as bindings from '/todo-ui-a600ffddc1847dbc.js';
+const wasm = await init('/todo-ui-a600ffddc1847dbc_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
